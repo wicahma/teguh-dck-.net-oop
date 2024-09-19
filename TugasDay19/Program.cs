@@ -1,44 +1,7 @@
 ﻿using System;
 
-namespace Tugas
+namespace TugasDay19
 {
-    public class User
-    {
-        public string nama { get; set; }
-        public string role { get; set; }
-        public int money { get; set; }
-    }
-
-
-    public class Admin : User
-    {
-        public Admin()
-        {
-            this.nama = "Teguh Dwi Cahya";
-            this.role = "admin";
-            this.money = 0;
-        }
-
-        public void custMoney(Customer customer, int custMoney)
-        {
-            customer.money += custMoney;
-        }
-    }
-
-
-    public class Customer : User
-    {
-        public Customer(string nama, int money)
-        {
-            this.nama = nama;
-            this.role = "cust";
-            this.money = money;
-        }
-
-        public int getMoney() { return this.money; }
-    }
-
-
     public class Tugas
     {
         static void Main(string[] args)
